@@ -91,9 +91,6 @@ header nav ul li:last-child a {
 
 /* -------  Search Form ------- */
 form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   border: 2px solid #ff385c;
   padding: 10px;
 }
@@ -122,13 +119,6 @@ form button {
   width: 100%;
 }
 
-.form-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 5px;
-  flex: 1;
-}
-
 /* -------  Footer ------- */
 
 footer {
@@ -152,20 +142,21 @@ footer p {
   }
 
   header {
-    background-color: #ff385c;
     display: flex;
-    flex-direction: row;
+    padding: 0; 
     justify-content: space-between;
   }
 
-  header nav {
-    padding: 0 10%;
+  header nav ul {
+    align-items: center;
   }
 
   form {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
 
   form div {
@@ -179,27 +170,8 @@ footer p {
   }
 
   .group {
-    display: flex;
     flex-direction: row;
-    justify-content: center;
-    flex-flow: row nowrap;
     align-items: center;
-  }
-
-  .vacation-form .item {
-    display: flex block;
-    flex: 1 1 auto;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .item label,
-  .item input,
-  .item select,
-  .item button {
-    display: flex;
-    width: 100%;
   }
 
   .grid-column {

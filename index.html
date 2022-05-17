@@ -21,11 +21,11 @@
     <header>
       <div class="logo">Thinkfulbnb</div>
       <nav>
-        <ul id="menu">
-          <li class="item"><a href="#stay">Stay</a></li>
-          <li class="item"><a href="#about">About</a></li>
-          <li class="item"><a href="#ideas">Ideas</a></li>
-          <li class="item"><a href="#host">Host</a></li>
+        <ul id="menu" class="item">
+          <li><a href="#stay">Stay</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#ideas">Ideas</a></li>
+          <li><a href="#host">Host</a></li>
         </ul>
       </nav>
     </header>
@@ -34,9 +34,11 @@
       <!-- Stay -->
       <section id="stay">
         <h2>Find the perfect vacation rental</h2>
-        <!-- Form created below -->
-        <form class="rental-form">
+        <div class="group">
           <div class="item">
+        <!-- Form created below -->
+        <form>
+          <div class="item item-double">
             <label for="location">Location</label>
             <input
               type="text"
@@ -46,15 +48,15 @@
               size="1"
             />
           </div>
-          <div class="item">
+          <div class="item item-double">
             <label for="arrive">Arrive</label>
             <input id="arrive" type="date" name="arrive" size="1" />
           </div>
-          <div class="item">
+          <div class="item item-double">
             <label for="depart">Depart</label>
             <input id="depart" type="date" name="depart" size="1" />
           </div>
-          <div class="item">
+          <div class="item item-double">
             <label for="type">Type</label>
             <select name="type" size="1">
               <option value="apartment">Apartment</option>
@@ -66,14 +68,16 @@
               <option value="Yurt">Yurt</option>
             </select>
           </div>
-          <div class="item">
+          <div>
             <button type="submit">Search</button>
           </div>
         </form>
+          </div>
+        </div>
       </section>
 
       <!-- About -->
-      <section id="about" class="alternate-background">
+      <section id="about" class="alternate-background">      
         <h2>About</h2>
         <div class="group">
           <div class="item">
@@ -105,26 +109,28 @@
       <!-- Ideas -->
       <section id="ideas">
         <h2>Ideas</h2>
-        <div class="grid-row">
-          <div class="grid-column">
-            <h3>Forest retreats</h3>
-            <img
-              src="images/forest-retreat.png" alt="Thinkfulbnb - Forest retreat" />
-            <h3>Beaches</h3>
-            <img src="images/beach-house.png" alt="Thinkfulbnb - Beach house" />
-          </div>
-          <div class="grid-column">
-            <h3>Rustic cabins</h3>
-            <img src="images/cabin.png" alt="Thinkfulbnb - Cabin" />
-            <h3>Pet-friendly</h3>
-            <img
-              src="images/pet-friendly.png"
-              alt="Thinkfulbnb - Pet-friendly"
-            />
+        <div class="group">
+          <div class="grid-row">
+            <div class="grid-column">
+              <h3>Forest retreats</h3>
+              <img
+                src="images/forest-retreat.png" alt="Thinkfulbnb - Forest retreat" />
+              <h3>Beaches</h3>
+              <img src="images/beach-house.png" alt="Thinkfulbnb - Beach house" />
+            </div>
+            <div class="grid-column">
+              <h3>Rustic cabins</h3>
+              <img src="images/cabin.png" alt="Thinkfulbnb - Cabin" />
+              <h3>Pet-friendly</h3>
+              <img
+                src="images/pet-friendly.png"
+                alt="Thinkfulbnb - Pet-friendly"
+              />
           </div>
         </div>
+        </div>
       </section>
-
+      
       <!-- Host -->
       <section id="host" class="alternate-background">
         <div class="group">
